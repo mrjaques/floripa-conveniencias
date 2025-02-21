@@ -249,7 +249,7 @@ const Index = () => {
             <div className="flex items-center gap-4">
               {/* Logo */}
               <img
-                src="/images/logo.jpg"
+                src="/images/logo.png"
                 alt="Logo"
                 className="w-12 h-12 rounded-full"
               />
