@@ -29,11 +29,15 @@ export const ProductCard = ({
     toast.success("Produto adicionado ao carrinho!");
   };
 
+
+
   return (
     <Card
-      className="relative overflow-hidden bg-white hover:shadow-md transition-all duration-300"
+      className="cursor-pointer relative overflow-hidden bg-white hover:shadow-md transition-all duration-300"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={handleAddToCart}
+
     >
       <div className="relative aspect-square overflow-hidden">
         <img
@@ -60,5 +64,5 @@ export const ProductCard = ({
         </div>
       </div>
     </Card>
-  );
+  );  
 };
