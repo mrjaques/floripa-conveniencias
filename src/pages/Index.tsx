@@ -4,6 +4,7 @@ import { ProductCard } from "@/components/ProductCard";
 import { Cart } from "@/components/Cart";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
+import Footer from "@/components/Footer";
 
 interface Product {
   id: number;
@@ -46,6 +47,14 @@ const products: Product[] = [
   },
   {
     id: "beer-4",
+    name: "Cerveja Amstel Latão",
+    price: 8.90,
+    image: "/images/amstel.jpg",
+    category: "Cervejas",
+    description: "Produto para maiores de 18 anos",
+  },
+  {
+    id: "beer-5",
     name: "Cerveja Amstel Latão",
     price: 8.90,
     image: "/images/amstel.jpg",
@@ -251,11 +260,12 @@ const Index = () => {
               <img
                 src="/images/logo.png"
                 alt="Logo"
-                className="w-12 h-12 rounded-full"
+                style={{ height: '70px', width: '70px', borderRadius: '50%' }} 
+                //className="w-14 h-14 rounded-full"
               />
               <div>
-                <h1 className="text-2xl font-bold">Floripa Conveniencias</h1>
-                <p className="text-sm text-gray-500">Bebidas Premium</p>
+                <h1 className="text-3xl font-bold">Floripa Conveniencias</h1>
+                <p className="text-1xl text-gray-500">Bebidas Premium</p>
               </div>
             </div>
             <Cart
@@ -320,6 +330,7 @@ const Index = () => {
           </div>
         )}
       </main>
+      
     </div>
   );
 };

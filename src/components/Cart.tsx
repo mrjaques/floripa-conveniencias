@@ -145,7 +145,7 @@ export const Cart = ({ items, onRemoveItem, onUpdateQuantity }: CartProps) => {
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
       <SheetTrigger asChild>
         <Button variant="outline" size="icon" className="relative">
-          <ShoppingCart className="h-5 w-5" />
+          <ShoppingCart style={{ height: '40px', width: '40px' }}  />
           {items.length > 0 && (
             <span className="absolute -top-2 -right-2 bg-gold-dark text-white text-xs rounded-full h-7 w-7 flex items-center justify-center">
               {items.length}
